@@ -6,8 +6,15 @@ Accepted
 
 ## Context
 
+Relevant User Stories:
+- [milestone/1]
+- [issues/1]
+- [issues/6]
+- [issues/8]
+
 At a university there are different types of teaching person. These all have different properties.
 For example there are professors, guest professors, lecturers and teacher for special tasks.
+
 
 ## Decision
 
