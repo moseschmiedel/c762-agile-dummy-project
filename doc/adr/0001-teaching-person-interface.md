@@ -23,3 +23,5 @@ Specifically, the teaching person must be able to:
 ## Consequences
 
 The TeachingPerson interface provides a standard way to introduce new types of teaching persons to the application.
+
+// provide positive and negative consequences of the decision
