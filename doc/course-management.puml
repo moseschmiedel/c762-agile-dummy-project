@@ -1,0 +1,30 @@
+@startuml
+interface Professor {
+    Professor(String id, String name);
+}
+
+class RelatedProfessorsMayNotBeEmptyException {
+
+}
+
+' TODO: interface Authorization
+
+interface Course {
+    Course(String name, List<Professor> related_professors);
+    Course(String id, String name, List<Professor> related_professors);
+    Course(String id, String name, String description, List<Professor> related_professors);
+
+    void setName(String name);
+    void setDescription(String description);
+
+    void addProfessor(Professor professor);
+    void removeProfessor(Professor professor) throws RelatedProfessorsMayNotBeEmptyException;
+}
+
+note right of Course::removeProfessor
+    The last professor should not be removable.
+end note
+
+Course -l- Professor
+
+@enduml
